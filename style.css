@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0px 2px 5px #ccc;
+}
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+.hero {
+    background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+
+    height: 60vh;
+    text-align: center;
+    color: rgb(239, 197, 197);
+
+    padding: 80px 20px;
+}
+.features-section {
+    padding: 40px;
+    text-align: center;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+}
+.feature-card {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px #ccc;
+    border-radius: 10px;
+}
+footer {
+    background-color: #333;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
