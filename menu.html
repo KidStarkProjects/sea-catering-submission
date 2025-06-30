@@ -26,33 +26,66 @@
             </nav>
         </header>
         <main>
-            <section class="hero">
-                <h1>Healthy Meals, Anytime, Anywhere</h1>
-                <p>Selamat Datang di SEA Catering! Kami Menyediakan Paket Makanan Sehat yang Bisa Disesuaikan dengan Tubuhmu, Diantar ke Seluruh Penjuru Indonesia </p>
-            </section>
-            <section class="features-section">
-            <h2>Layanan Utama Kami</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>Kustomisasi Menu</h3>
-                    <p>Pilih Bahan dan Atur Nutrisi Sesuai Seleramu</p>
-                </div>
-                <div class="feature-card">
-                   <h3>Pengiriman Luas</h3>
-                   <p>Kami Menjangkau Kota Kota Besar di Seluruh Indonesia</p> 
-                </div>
-                <div class="feature-card">
-                  <h3>Informasi Gizi Detail</h3>
-                  <p>Ketahui Kalori dan Nutrisi dari Setiap Makananmu</p>  
+            <div class="menu-container">
+                <h1 class="menu-title">Pilih Paket Makanan Anda</h1>
+                <div class="meal-plan-grid">
+            
+                    <div class="meal-card">
+                        <img src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Weight Loss Plan">
+                        <div class="card-content">
+                            <h3>Weight Loss Plan</h3>
+                            <p class="price">Rp 450.000 / minggu</p>
+                            <p class="description">Menu rendah kalori yang dirancang khusus untuk membantu Anda mencapai berat badan ideal.</p>
+                        </div>
+                        <button class="details-btn" data-title="Weight Loss Plan" data-price="Rp 450.000 / minggu" data-description="Paket ini mencakup sarapan, makan siang, dan makan malam dengan total 1200-1500 kalori per hari. Semua bahan segar dan organik, dengan menu yang bervariasi setiap harinya agar Anda tidak bosan. Fokus pada protein tanpa lemak, sayuran, dan karbohidrat kompleks.">
+                            Lihat Detail
+                        </button>
+                    </div>
+            
+                    <div class="meal-card">
+                        <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Muscle Gain Plan">
+                        <div class="card-content">
+                            <h3>Muscle Gain Plan</h3>
+                            <p class="price">Rp 550.000 / minggu</p>
+                            <p class="description">Tingkatkan massa otot Anda dengan paket tinggi protein dan nutrisi seimbang.</p>
+                        </div>
+                        <button class="details-btn" data-title="Muscle Gain Plan" data-price="Rp 550.000 / minggu" data-description="Dirancang untuk para pegiat fitness, paket ini menyediakan 2000-2500 kalori per hari dengan fokus utama pada protein berkualitas tinggi dari ayam, ikan, dan daging sapi. Dilengkapi dengan karbohidrat untuk energi dan sayuran untuk serat.">
+                            Lihat Detail
+                        </button>
+                    </div>
+            
+                    <div class="meal-card">
+                        <img src="https://images.pexels.com/photos/3620894/pexels-photo-3620894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Vegetarian Plan">
+                        <div class="card-content">
+                            <h3>Vegetarian Plan</h3>
+                            <p class="price">Rp 480.000 / minggu</p>
+                            <p class="description">Nikmati hidangan lezat dan sehat berbasis nabati yang penuh gizi dan rasa.</p>
+                        </div>
+                        <button class="details-btn" data-title="Vegetarian Plan" data-price="Rp 480.000 / minggu" data-description="100% tanpa daging, paket ini menggunakan sumber protein nabati seperti tahu, tempe, kacang-kacangan, dan quinoa. Menu kreatif kami memastikan Anda tetap mendapatkan semua nutrisi penting tanpa mengonsumsi produk hewani.">
+                            Lihat Detail
+                        </button>
+                    </div>
                 </div>
             </div>
-        </section>
-        </main>
+         </main>
         <footer>
             <h2>Hubungi Kami</h2>
             <p>Manajer : Brian</p>
             <p>Telepon : 08123456789</p>
         </footer>
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <button class="close-button">&times;</button>
+                <div class="modal-body">
+                    <img id="modal-img" src="" alt="Meal Plan Image">
+                    <div class="modal-text">
+                        <h2 id="modal-title"></h2>
+                        <p id="modal-price"></p>
+                        <p id="modal-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
