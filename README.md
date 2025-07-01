@@ -81,7 +81,7 @@ Pada level ini, website statis dikembangkan menjadi aplikasi yang interaktif dan
 
 ---
 
-### 🔥 **Level 3 (Stretch Goal): Kalkulator Harga Interaktif**
+### 🔥 **Level 3 (Not Finished): Kalkulator Harga Interaktif**
 
 Sebagai tantangan tambahan, bagian pertama dari Level 3 berhasil diimplementasikan.
 
