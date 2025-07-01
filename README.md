@@ -52,3 +52,31 @@ Proyek ini adalah website statis murni dan tidak memerlukan proses instalasi ata
     cd [sea-catering-submission]
     ```
 3.  Buka file `index.html` langsung di browser pilihan Anda (Google Chrome, Firefox, dll.). Selesai!
+
+---
+
+### ✨ **Level 2: Interaktivitas dengan JavaScript**
+
+Pada level ini, website statis dikembangkan menjadi aplikasi yang interaktif dan responsif menggunakan JavaScript.
+
+**Fitur yang Diimplementasikan:**
+
+1.  **Navigasi Responsif:**
+    * Membuat struktur multi-halaman (`index.html`, `menu.html`, dll.).
+    * Mengimplementasikan "Hamburger Menu" untuk tampilan mobile yang berfungsi penuh, mengubah ikon menjadi 'X' saat aktif.
+    * Menambahkan *highlight* pada link navigasi untuk menandakan halaman yang sedang aktif.
+
+2.  **Tampilan Paket Makanan Interaktif:**
+    * Membuat halaman menu dengan kartu-kartu paket makanan yang dinamis.
+    * Mengimplementasikan **Modal Pop-up** yang muncul saat tombol "Lihat Detail" di-klik.
+    * JavaScript digunakan untuk mengambil data dari atribut `data-*` pada tombol dan mengisinya secara dinamis ke dalam modal.
+
+3.  **Bagian Testimoni:**
+    * Menambahkan formulir untuk pengguna mengirimkan ulasan.
+    * Membuat **Slider Testimoni** sederhana dengan tombol "Next" dan "Previous" yang berfungsi untuk menavigasi ulasan.
+
+**Tantangan & Pembelajaran:**
+* **Manipulasi DOM:** Belajar menggunakan `document.querySelector` dan `addEventListener` untuk membuat halaman merespons aksi pengguna.
+* **Scope & Error Handling:** Menghadapi dan memperbaiki `ReferenceError` dengan memahami bahwa script perlu "menjaga" dirinya sendiri, hanya menjalankan kode jika elemen yang relevan ada di halaman tersebut. Ini adalah pelajaran penting dalam membuat kode yang modular dan bebas dari bug.
+
+---
