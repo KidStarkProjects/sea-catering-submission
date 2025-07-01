@@ -79,3 +79,28 @@ if (testimonialForm) {
         testimonialForm.reset();
     });
 }
+const subscriptionForm = document.getElementById("subscription-form");
+if (subscriptionForm) {
+    const planInputs = document.querySelectorAll('input[name="plan"]');
+    const mealTypeInputs = document.querySelectorAll('input[name="mealType"]');
+    const deliveryDayInputs = document.querySelectorAll('input[name="deliveryDay"]');
+    const totalPriceElement = document.getElementById("total-price");
+function calculateTotal() {
+    const planInputs = document.querySelectorAll('input[name="plan"]');
+    const totalPriceElement = document.getElementById("total-price");
+    let planPrice = 0;
+    planInputs.forEach(function(input) {
+        if (input.checked) {
+            planPrice = Number(input.value);
+        }
+    });
+    const selectedMealTypes = document.querySelectorAll('input[name="mealType"]:checked').length;
+    const selectedDeliveryDays = document.querySelectorAll('input[name="deliveryDay"]:checked').length;
+    const totalPrice = planPrice * selectedMealTypes * selectedDeliveryDays * 4.3;
+    totalPriceElement.textContent = `Rp ${totalPrice.toLocaleString('id-ID')}`;
+}
+const allInputs = [...planInputs, ...mealTypeInputs, ...deliveryDayInputs]; // Biarkan ini apa adanya
+allInputs.forEach(input => {
+    input.addEventListener("change", calculateTotal); // Ini akan memanggil fungsi versi baru
+});
+}

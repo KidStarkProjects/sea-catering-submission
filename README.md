@@ -80,3 +80,14 @@ Pada level ini, website statis dikembangkan menjadi aplikasi yang interaktif dan
 * **Scope & Error Handling:** Menghadapi dan memperbaiki `ReferenceError` dengan memahami bahwa script perlu "menjaga" dirinya sendiri, hanya menjalankan kode jika elemen yang relevan ada di halaman tersebut. Ini adalah pelajaran penting dalam membuat kode yang modular dan bebas dari bug.
 
 ---
+
+### 🔥 **Level 3 (Stretch Goal): Kalkulator Harga Interaktif**
+
+Sebagai tantangan tambahan, bagian pertama dari Level 3 berhasil diimplementasikan.
+
+* **Fitur yang Diimplementasikan:**
+    * Membuat halaman formulir berlangganan yang terstruktur dengan berbagai tipe input (`radio`, `checkbox`).
+    * Mengimplementasikan **kalkulator harga *real-time*** menggunakan JavaScript. Total harga akan otomatis ter-update setiap kali pengguna mengubah pilihan paket, tipe makanan, atau hari pengiriman.
+* **Pembelajaran:**
+    * Berhasil mengatasi masalah **kompatibilitas browser** (Safari vs. Chrome) dengan menulis kode JavaScript yang lebih 'aman' dan 'robust'.
+    * Mendalami proses **debugging** menggunakan Developer Console untuk melacak error seperti `ReferenceError`.

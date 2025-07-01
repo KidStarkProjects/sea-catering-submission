@@ -26,28 +26,106 @@
             </nav>
         </header>
         <main>
-            <section class="hero">
-                <h1>Healthy Meals, Anytime, Anywhere</h1>
-                <p>Selamat Datang di SEA Catering! Kami Menyediakan Paket Makanan Sehat yang Bisa Disesuaikan dengan Tubuhmu, Diantar ke Seluruh Penjuru Indonesia </p>
-            </section>
-            <section class="features-section">
-            <h2>Layanan Utama Kami</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>Kustomisasi Menu</h3>
-                    <p>Pilih Bahan dan Atur Nutrisi Sesuai Seleramu</p>
-                </div>
-                <div class="feature-card">
-                   <h3>Pengiriman Luas</h3>
-                   <p>Kami Menjangkau Kota Kota Besar di Seluruh Indonesia</p> 
-                </div>
-                <div class="feature-card">
-                  <h3>Informasi Gizi Detail</h3>
-                  <p>Ketahui Kalori dan Nutrisi dari Setiap Makananmu</p>  
-                </div>
+            <div class="subscription-container">
+                <h1 class="page-title">Formulir Berlangganan</h1>
+                <p class="page-subtitle">Lengkapi detail di bawah ini untuk memulai perjalanan sehatmu.</p>
+            
+                <form id="subscription-form">
+                    <fieldset>
+                        <legend>1. Detail Pribadi</legend>
+                        <div class="form-group">
+                            <label for="fullName">Nama Lengkap*</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Nomor Telepon Aktif*</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                        </div>
+                    </fieldset>
+            
+                    <fieldset>
+                        <legend>2. Pilih Paket Anda*</legend>
+                        <div class="radio-group">
+                            <input type="radio" id="dietPlan" name="plan" value="30000" required>
+                            <label for="dietPlan">Diet Plan - Rp 30.000 / makanan</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="proteinPlan" name="plan" value="40000" required>
+                            <label for="proteinPlan">Protein Plan - Rp 40.000 / makanan</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="royalPlan" name="plan" value="60000" required>
+                            <label for="royalPlan">Royal Plan - Rp 60.000 / makanan</label>
+                        </div>
+                    </fieldset>
+            
+                    <fieldset>
+                        <legend>3. Pilih Tipe Makanan*</legend>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="breakfast" name="mealType" value="breakfast">
+                            <label for="breakfast">Sarapan (Breakfast)</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="lunch" name="mealType" value="lunch">
+                            <label for="lunch">Makan Siang (Lunch)</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="dinner" name="mealType" value="dinner">
+                            <label for="dinner">Makan Malam (Dinner)</label>
+                        </div>
+                    </fieldset>
+            
+                    <fieldset>
+                        <legend>4. Pilih Hari Pengiriman*</legend>
+                        <div class="checkbox-grid">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="mon" name="deliveryDay" value="mon">
+                                <label for="mon">Senin</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="tue" name="deliveryDay" value="tue">
+                                <label for="tue">Selasa</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="wed" name="deliveryDay" value="wed">
+                                <label for="wed">Rabu</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="thu" name="deliveryDay" value="thu">
+                                <label for="thu">Kamis</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="fri" name="deliveryDay" value="fri">
+                                <label for="fri">Jumat</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="sat" name="deliveryDay" value="sat">
+                                <label for="sat">Sabtu</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="sun" name="deliveryDay" value="sun">
+                                <label for="sun">Minggu</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>5. Alergi (Opsional)</legend>
+                        <div class="form-group">
+                            <label for="allergies">Sebutkan jika Anda memiliki alergi atau pantangan makanan.</label>
+                            <textarea id="allergies" name="allergies" rows="4"></textarea>
+                        </div>
+                    </fieldset>
+            
+                    <div class="price-calculation">
+                        <h3>Estimasi Biaya Langganan Bulanan:</h3>
+                        <h2 id="total-price">Rp 0</h2>
+                    </div>
+            
+                    <button type="submit" class="submit-btn">Berlangganan Sekarang</button>
+                </form>
             </div>
-        </section>
-        </main>
+            </main>
         <footer>
             <h2>Hubungi Kami</h2>
             <p>Manajer : Brian</p>
